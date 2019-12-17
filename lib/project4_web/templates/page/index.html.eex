@@ -1,0 +1,125 @@
+<div class="login-container row" id="login-container"> 
+
+	<div class="regiistration-page col-sm-9">
+    <div class="form-box">
+                        		<div class="form-top">
+	                        		<div class="form-top-left">
+	                        			<h3>Register</h3>
+	                        		</div>
+	                        		<div class="form-top-right">
+	                        			<i class="fa fa-pencil"></i>
+	                        		</div>
+	                            </div>
+	                            <div class="form-bottom">
+				                    <%# <form role="form" class="registration-form"> %>
+				                        <div class="form-group">
+				                    		<label class="sr-only" for="form-username">Username</label>
+				                        	<input type="text" name="form-username" placeholder="Username..." class="form-username form-control" id="register-username">
+				                        </div>
+				                        <div class="form-group">
+				                        	<label class="sr-only" for="form-password">Password</label>
+				                        	<input type="password" name="form-password" placeholder="Password..." class="form-password form-control" id="register-password">
+				                        </div>	
+				                        <button type="submit" class="btn" id="register-btn">Sign up!</button>
+				                    <%# </form> %>
+			                    </div>
+                        	</div>
+
+
+    <div class="form-box">
+
+	                        		<div class="form-top-left">
+	                        			<h3>Login</h3>
+	                        		</div>
+	                        		<div class="form-top-right">
+	                        			<i class="fa fa-key"></i>
+	                        		</div>
+	                            </div>
+    <div class="form-bottom">
+				                    <%# <form role="form" method="post" action="<%=Map.get(@conn.req_cookies, "_csrf_token") %>
+				                    	<div class="form-group">
+				                    		<label class="sr-only" for="form-username">Username</label>
+				                        	<input type="text" name="form-username" placeholder="Username..." class="form-username form-control" id="login-username">
+				                        </div>
+				                        <div class="form-group">
+				                        	<label class="sr-only" for="form-password">Password</label>
+				                        	<input type="password" name="form-password" placeholder="Password..." class="form-password form-control" id="login-password">
+				                        </div>
+																 <button type="submit" class="btn" id="login-btn">Login!</button>
+				                    <%# </form> %>
+			                    </div>
+  </div>
+</div>
+
+			
+	
+<div class="container" id="content-container" style="display:none;">
+	<div class="row">
+		
+				<div class="row">
+         <input type="text" id="tweet-box" class="form-control input-sm col-sm-3" style="height:30px !important; display:none; width:80% !important;" placeholder="What do you wish to tweet today">
+         
+
+         <button type="submit" class="btn col-sm-2 col-sm-offset-1" id="tweet-btn" style="margin-left: 5px; line-height: 0px !important; font-weight: 0px !important; height: 30px !important; display:none;">Enter</button>
+		</div>
+         <br>
+		<br>
+
+
+				<div class="navbar navbar-default bg-dark" role="navigation">
+
+							<div class="navbar-header">
+								<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".sidebar-navbar-collapse">
+									<span class="sr-only">Toggle navigation</span>
+									<span class="icon-bar"></span>
+									<span class="icon-bar"></span>
+									<span class="icon-bar"></span>
+								</button>
+							</div>
+
+							<div class="navbar-collapse collapse sidebar-navbar-collapse">
+								<ul class="nav navbar-nav">
+									<li id="news-feed"><a href="#">LiveFeed</a></li>
+									<li id="show-my-tweets"><a href="#">My Tweets</a></li>
+									<li id="follow"><a href="#">Subscriptions</a></li>
+									<li id="query-hash"><a href="#">Search By HashTag</a></li>
+									<li id="query-mention"><a href="#">Search By Mention</a></li>
+									<li id="logout"><a href="">Log Out</a></li>
+
+									
+								</ul>
+							</div>
+
+				</div>
+
+
+			<div class="col-sm-9 content">
+
+				<%# My Tweets %>
+				<h3 id="h3-tweets" style="display:none;">My Tweets</h3>
+				<div id="my-tweets" style="display:none;"></div>
+
+				<%# Follow/Subscribe_to %>
+				<h3 id="h3-follow" style="display:none;">My Subscriptions</h3>
+				<input type="text" id="follow-box" class="form-control input-sm col-sm-6" style="height:30px !important; display:none;" placeholder="Enter a user to follow...">
+				<button type="submit" class="btn col-sm-3 col-sm-offset-1" id="follow-btn" style="margin-top: 10px; line-height: 0px !important; font-weight: 0px !important; height: 30px !important; display:none;">Follow</button>
+			
+				<%# News Feed %>
+				<h3 id="h3-newsfeed" style="display:none;">LiveFeed</h3>
+				<div id="my-news-feed" style="display:none;"></div>
+
+				<%# Hash %>
+					<h3 id="h3-hash" style="display:none;">Search By HashTag</h3>
+					<input type="text" id="hash-box" class="form-control input-sm col-sm-6" style="height:30px !important; display:none;" placeholder="Enter a hash string to query...">
+					<button type="submit" class="btn col-sm-3 col-sm-offset-1" id="hash-btn" style="margin-top: 10px; line-height: 0px !important; font-weight: 0px !important; height: 30px !important; display:none;">Query Hash</button>
+					<div id="my-hash" style="display:none;"></div>
+
+					<%# Mention %>
+					<h3 id="h3-mention" style="display:none;">Search By Mention</h3>
+					<input type="text" id="mention-box" class="form-control input-sm col-sm-6" style="height:30px !important; display:none;" placeholder="Enter a mentioned user to query...">
+					<button type="submit" class="btn col-sm-3 col-sm-offset-1" id="mention-btn" style="margin-top: 10px; line-height: 0px !important; font-weight: 0px !important; height: 30px !important; display:none;">Query Mentions</button>
+					<div id="my-mention" style="display:none;"></div>
+			</div>
+	</div>
+</div>
+

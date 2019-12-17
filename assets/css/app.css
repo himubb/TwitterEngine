@@ -1,0 +1,155 @@
+/* This file is for your main application css. */
+
+
+/* This file is for your main application css. */
+
+
+.login-container{
+    height: 100% !important;
+    width:100% !important;
+}
+.form-bottom{
+    -moz-border-radius: 0 0 4px 4px;
+    padding: 25px 25px 30px 25px;
+    background: #24a0ed;
+    -webkit-border-radius: 0 0 4px 4px;
+    border-radius: 0 0 4px 4px;
+    text-align: left;
+}
+.form-bottom form button.btn {
+    width: 100%;
+}
+
+button.btn {
+    height: 35px;
+    margin: 0;
+    padding: 0 20px;
+    vertical-align: middle;
+    background: #24a0ed;
+    border: 0;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 50px;
+    color: #fff;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+    text-shadow: none;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    -o-transition: all .3s;
+    -moz-transition: all .3s;
+    -webkit-transition: all .3s;
+    -ms-transition: all .3s;
+    transition: all .3s;
+}
+
+.form-top {
+    overflow: hidden;
+    padding: 0 25px 15px 25px;
+    background: #fff;
+    -moz-border-radius: 4px 4px 0 0;
+    -webkit-border-radius: 4px 4px 0 0;
+    border-radius: 4px 4px 0 0;
+    text-align: left;
+}
+
+#title {
+    position: relative;
+    background-color: #1A1C1D;
+    width: 100%;
+    padding: 20px 0px;
+    border-radius: 0.35em;
+    font-size: 22px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+
+.date-time {
+    float: left;
+    background-color: #373b3d;
+    border: 1px solid #373b3d;
+    padding: 4px 8px;
+    border-right: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+
+.privacy {
+    margin-top: 5px;
+    position: relative;
+    font-size: 12px;
+    bottom: 0%;
+}
+
+.privacy a:link {
+    color: #949494;
+    text-decoration: none;
+}
+
+.privacy a:visited {
+    color: #949494;
+    text-decoration: none;
+}
+
+.privacy a:hover {
+    color: #C1C3C6;
+    transition: color 1s;
+}
+
+#reg-login {
+    background-color: #1D1F20;
+    position: relative;
+    top: 20%;
+    margin: auto;
+    width: 340px;
+    height: 445px;
+    border-radius: 0.35em;
+    box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+#log-register {
+    background-color: #1D1F20;
+    position: relative;
+    top: 20%;
+    margin: auto;
+    width: 340px;
+    height: 480px;
+    border-radius: 0.35em;
+    box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+
+
+
+@media (min-width: 768px) {
+    .navbar {
+        background-color: #124;
+  
+  position: fixed; /* Set the navbar to fixed position */
+  top: 0; /* Position the navbar at the top of the page */
+  width: 60%; /* Full width */
+}
+
+    .navbar .navbar-collapse {
+        overflow: hidden;
+    background-color: #124;
+      padding: 0;
+      max-height: none;
+    }
+    .navbar ul {
+      float: none;
+      display: block;
+    }
+    .navbar li {
+      float: none;
+      display: block;
+    }
+    .navbar li a {
+      padding-top: 12px;
+      padding-bottom: 12px;
+    }
+  }
